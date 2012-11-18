@@ -1,0 +1,3 @@
+[submodule "chambermaid-frontend"]
+	path = chambermaid-frontend
+	url = git@github.com:mj/chambermaid-frontend.git

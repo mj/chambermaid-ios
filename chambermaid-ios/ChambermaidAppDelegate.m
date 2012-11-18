@@ -3,12 +3,13 @@
 //  chambermaid-ios
 //
 //  Created by Martin Jansen on 18.11.12.
-//  Copyright (c) 2012 Bauer + Kirch GmbH. All rights reserved.
+//  Copyright (c) 2012 Martin Jansen. All rights reserved.
 //
 
 #import "ChambermaidAppDelegate.h"
 
 #import "ChambermaidViewController.h"
+#import "ChambermaidURLProtocol.h"
 
 @implementation ChambermaidAppDelegate
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [NSURLProtocol registerClass:[ChambermaidURLProtocol class]];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ChambermaidViewController alloc] initWithNibName:@"ChambermaidViewController" bundle:nil];

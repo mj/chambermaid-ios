@@ -3,7 +3,7 @@
 //  chambermaid-ios
 //
 //  Created by Martin Jansen on 18.11.12.
-//  Copyright (c) 2012 Bauer + Kirch GmbH. All rights reserved.
+//  Copyright (c) 2012 Martin Jansen. All rights reserved.
 //
 
 #import "ChambermaidViewController.h"
@@ -39,6 +39,9 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    NSURLRequest *reqest = [NSURLRequest requestWithURL:[NSURL URLWithString:@"chambermaid://local/index.html"]];
+    [(UIWebView*)self.view loadRequest:reqest]  ;
 }
 
 - (void)viewWillDisappear:(BOOL)animated

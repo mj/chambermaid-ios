@@ -15,6 +15,8 @@
 		5BBAE6E01658F71E002F9C5C /* ChambermaidAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBAE6DF1658F71E002F9C5C /* ChambermaidAppDelegate.m */; };
 		5BBAE6E31658F71E002F9C5C /* ChambermaidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBAE6E21658F71E002F9C5C /* ChambermaidViewController.m */; };
 		5BBAE6E61658F71E002F9C5C /* ChambermaidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BBAE6E41658F71E002F9C5C /* ChambermaidViewController.xib */; };
+		5BBAE6EE1658F77F002F9C5C /* ChambermaidURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BBAE6ED1658F77F002F9C5C /* ChambermaidURLProtocol.m */; };
+		5BBAE6F01658FA0B002F9C5C /* chambermaid-frontend in Resources */ = {isa = PBXBuildFile; fileRef = 5BBAE6EF1658FA0B002F9C5C /* chambermaid-frontend */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +24,18 @@
 		5BBAE6CF1658F71E002F9C5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5BBAE6D11658F71E002F9C5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5BBAE6D31658F71E002F9C5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5BBAE6D71658F71E002F9C5C /* chambermaid-ios-Info.plist */ = {isa = PBXFileReference; path = "chambermaid-ios-Info.plist"; sourceTree = "<group>"; };
+		5BBAE6D71658F71E002F9C5C /* chambermaid-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "chambermaid-ios-Info.plist"; sourceTree = "<group>"; };
 		5BBAE6D91658F71E002F9C5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5BBAE6DB1658F71E002F9C5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5BBAE6DD1658F71E002F9C5C /* chambermaid-ios-Prefix.pch */ = {isa = PBXFileReference; path = "chambermaid-ios-Prefix.pch"; sourceTree = "<group>"; };
-		5BBAE6DE1658F71E002F9C5C /* ChambermaidAppDelegate.h */ = {isa = PBXFileReference; path = ChambermaidAppDelegate.h; sourceTree = "<group>"; };
+		5BBAE6DD1658F71E002F9C5C /* chambermaid-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "chambermaid-ios-Prefix.pch"; sourceTree = "<group>"; };
+		5BBAE6DE1658F71E002F9C5C /* ChambermaidAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChambermaidAppDelegate.h; sourceTree = "<group>"; };
 		5BBAE6DF1658F71E002F9C5C /* ChambermaidAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChambermaidAppDelegate.m; sourceTree = "<group>"; };
-		5BBAE6E11658F71E002F9C5C /* ChambermaidViewController.h */ = {isa = PBXFileReference; path = ChambermaidViewController.h; sourceTree = "<group>"; };
+		5BBAE6E11658F71E002F9C5C /* ChambermaidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChambermaidViewController.h; sourceTree = "<group>"; };
 		5BBAE6E21658F71E002F9C5C /* ChambermaidViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChambermaidViewController.m; sourceTree = "<group>"; };
 		5BBAE6E51658F71E002F9C5C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ChambermaidViewController.xib; sourceTree = "<group>"; };
+		5BBAE6EC1658F77F002F9C5C /* ChambermaidURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChambermaidURLProtocol.h; sourceTree = "<group>"; };
+		5BBAE6ED1658F77F002F9C5C /* ChambermaidURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChambermaidURLProtocol.m; sourceTree = "<group>"; };
+		5BBAE6EF1658FA0B002F9C5C /* chambermaid-frontend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "chambermaid-frontend"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +55,7 @@
 		5BBAE6C01658F71D002F9C5C = {
 			isa = PBXGroup;
 			children = (
+				5BBAE6EF1658FA0B002F9C5C /* chambermaid-frontend */,
 				5BBAE6D51658F71E002F9C5C /* chambermaid-ios */,
 				5BBAE6CE1658F71E002F9C5C /* Frameworks */,
 				5BBAE6CC1658F71E002F9C5C /* Products */,
@@ -81,6 +87,8 @@
 				5BBAE6DF1658F71E002F9C5C /* ChambermaidAppDelegate.m */,
 				5BBAE6E11658F71E002F9C5C /* ChambermaidViewController.h */,
 				5BBAE6E21658F71E002F9C5C /* ChambermaidViewController.m */,
+				5BBAE6EC1658F77F002F9C5C /* ChambermaidURLProtocol.h */,
+				5BBAE6ED1658F77F002F9C5C /* ChambermaidURLProtocol.m */,
 				5BBAE6E41658F71E002F9C5C /* ChambermaidViewController.xib */,
 				5BBAE6D61658F71E002F9C5C /* Supporting Files */,
 			);
@@ -108,6 +116,7 @@
 				5BBAE6C71658F71E002F9C5C /* Sources */,
 				5BBAE6C81658F71E002F9C5C /* Frameworks */,
 				5BBAE6C91658F71E002F9C5C /* Resources */,
+				5BBAE6F11658FA21002F9C5C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -151,10 +160,27 @@
 			files = (
 				5BBAE6DA1658F71E002F9C5C /* InfoPlist.strings in Resources */,
 				5BBAE6E61658F71E002F9C5C /* ChambermaidViewController.xib in Resources */,
+				5BBAE6F01658FA0B002F9C5C /* chambermaid-frontend in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BBAE6F11658FA21002F9C5C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/tcsh;
+			shellScript = "touch -cm ${SRCROOT}/chambermaid-frontend";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BBAE6C71658F71E002F9C5C /* Sources */ = {
@@ -164,6 +190,7 @@
 				5BBAE6DC1658F71E002F9C5C /* main.m in Sources */,
 				5BBAE6E01658F71E002F9C5C /* ChambermaidAppDelegate.m in Sources */,
 				5BBAE6E31658F71E002F9C5C /* ChambermaidViewController.m in Sources */,
+				5BBAE6EE1658F77F002F9C5C /* ChambermaidURLProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +237,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = Chambermaid;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -229,6 +257,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = Chambermaid;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -275,6 +304,7 @@
 				5BBAE6EB1658F71E002F9C5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
