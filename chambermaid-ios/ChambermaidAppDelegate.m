@@ -10,6 +10,13 @@
 
 #import "ChambermaidViewController.h"
 #import "ChambermaidURLProtocol.h"
+#import "ChambermaidDataURLProtocol.h"
+#import <Security/Security.h>
+
+@interface NSURLRequest (ChambermaidExtensions)
++ (BOOL)allowsAnyHTTPSCertificateForHost:(NSString*)host;
++ (void)setAllowsAnyHTTPSCertificate:(BOOL)allow forHost:(NSString*)host;
+@end
 
 @implementation ChambermaidAppDelegate
 
@@ -18,8 +25,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [NSURLProtocol registerClass:[ChambermaidURLProtocol class]];
+    [NSURLRequest setAllowsAnyHTTPSCertificate:YES forHost:@"scalar.home"];
 
+    [NSURLProtocol registerClass:[ChambermaidURLProtocol class]];
+    [NSURLProtocol registerClass:[ChambermaidDataURLProtocol class]];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ChambermaidViewController alloc] initWithNibName:@"ChambermaidViewController" bundle:nil];
